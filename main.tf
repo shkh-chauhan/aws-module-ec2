@@ -18,7 +18,7 @@ variable "name" {
 resource "aws_instance" "s1" {
   ami = var.image
   instance_type = var.hw
-  key_name = var.key
+ # key_name = var.key
   tags = {
      env = upper("Test")
      Name = upper(var.name)
