@@ -1,4 +1,6 @@
-
+provider "aws" {
+  region = "us-east-2"
+}
 variable "image" {
   default = "ami-0e58b083ed4c66b2b"
 }
